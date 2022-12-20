@@ -718,11 +718,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9e317e38789db63478daf53dbadf0aa8, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!58 &928546444
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -752,10 +752,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpeed: 1
-  ySpeed: 1
+  ySpeed: 2
   canCollisionlayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1536
 --- !u!1 &941031472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,7 +1228,8 @@ GameObject:
   - component: {fileID: 1946633864}
   - component: {fileID: 1946633867}
   - component: {fileID: 1946633866}
-  m_Layer: 0
+  - component: {fileID: 1946633868}
+  m_Layer: 9
   m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1311,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946633863}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1349,3 +1350,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1946633868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946633863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4719580fe77de76429796701ea79b828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
